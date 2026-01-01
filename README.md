@@ -1,54 +1,59 @@
 # Individual-project-Large-language-model
 Large language model Assignment 
 Multi-Class Sentiment Analysis using BERT
-Description
+📌 Project Overview
 
-This project explores multi-class sentiment analysis on Yelp reviews using a fine-tuned BERT model. The task is to classify reviews into five sentiment categories (1–5 star ratings).
-The performance of BERT is compared with a traditional TF-IDF + Logistic Regression baseline to evaluate the benefit of transformer-based models for sentiment classification.
+This project explores multi-class sentiment analysis on Yelp reviews using a fine-tuned BERT model.
+The task is to classify reviews into five sentiment categories (1–5 star ratings).
 
-Dataset
+A traditional TF-IDF + Logistic Regression model is used as a baseline to evaluate the benefits of transformer-based contextual representations.
 
-Dataset: Yelp Review Full
+📊 Dataset
+
+Yelp Review Full Dataset
 
 Source: Hugging Face Datasets
 
-Classes: 5 (1–5 stars)
+Sentiment Classes: 5 (1–5 stars)
 
-Data used:
+Subset Used:
 
-40,000 training samples
+🟢 40,000 training samples
 
-10,000 test samples
+🔵 10,000 test samples
 
-Models
+🤖 Models Implemented
+🔹 Baseline Model
 
-Baseline Model: TF-IDF + Logistic Regression
+TF-IDF + Logistic Regression
 
-Main Model: BERT-base-uncased (fine-tuned for classification)
+🔹 Transformer Model
 
-Preprocessing
+BERT-base-uncased
+
+Fine-tuned for multi-class classification
+
+🧹 Data Preprocessing
+
+The following preprocessing steps were applied:
 
 BERT WordPiece tokenisation
 
-Padding and truncation to a maximum of 128 tokens
+Padding and truncation to 128 tokens
 
-Attention masks generation
+Attention mask generation
 
 Conversion to PyTorch tensors
 
-Training Setup
+⚙️ Training Configuration
+Setting	Value
+Optimiser	AdamW
+Loss Function	Cross-entropy
+Batch Size	16
+Epochs	2
+📈 Evaluation Metrics
 
-Optimiser: AdamW
-
-Loss function: Cross-entropy
-
-Batch size: 16
-
-Epochs: 2
-
-Evaluation
-
-The models were evaluated using:
+Model performance was measured using:
 
 Accuracy
 
@@ -58,32 +63,32 @@ Macro Recall
 
 Macro F1-score
 
-Results
+🧪 Results
 Model	Accuracy	F1-score (Macro)
 BERT	61.19%	60.97%
 TF-IDF + Logistic Regression	56.51%	56.26%
 
-The fine-tuned BERT model outperformed the baseline, demonstrating that contextual embeddings capture sentiment more effectively than traditional bag-of-words approaches.
+✔️ BERT outperformed the baseline, showing that contextual embeddings capture sentiment more effectively than traditional bag-of-words methods.
 
-Limitations
+⚠️ Limitations
 
-Limited training due to computational constraints
+Training limited due to computational constraints
 
 Minimal hyperparameter tuning
 
-Only one transformer model was tested
+Only one transformer model evaluated
 
-Future Improvements
+🚀 Future Improvements
 
-Experiment with other transformer models (RoBERTa, DistilBERT)
+Evaluate other transformer models (RoBERTa, DistilBERT)
 
-Increase the number of training epochs
+Increase training epochs
 
 Perform extensive hyperparameter tuning
 
-Use larger subsets of the dataset
+Use larger training subsets
 
-Tools & Libraries
+🛠️ Tools & Libraries
 
 Python
 
@@ -95,6 +100,12 @@ Hugging Face Datasets
 
 Scikit-learn
 
-Notes
+📚 Notes
 
-This project was completed as a student academic exercise to demonstrate practical understanding of NLP, transformer models, and sentiment analysis.
+This repository represents a student academic project demonstrating practical understanding of:
+
+Natural Language Processing
+
+Transformer models
+
+Sentiment analysis
