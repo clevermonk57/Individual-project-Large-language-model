@@ -1,7 +1,8 @@
 # Individual-project-Large-language-model
 Large language model Assignment 
 Multi-Class Sentiment Analysis using BERT
- Project Overview
+
+### Project Overview
 
 This project explores multi-class sentiment analysis on Yelp reviews using a fine-tuned BERT model.
 The task is to classify reviews into five sentiment categories (1–5 star ratings).
@@ -18,22 +19,22 @@ Sentiment Classes: 5 (1–5 stars)
 
 Subset Used:
 
-🟢 40,000 training samples
+ 40,000 training samples
 
-🔵 10,000 test samples
+ 10,000 test samples
 
-🤖 Models Implemented
-🔹 Baseline Model
+### Models Implemented
+## Baseline Model
 
-TF-IDF + Logistic Regression
+## TF-IDF + Logistic Regression
 
-🔹 Transformer Model
+Transformer Model
 
 BERT-base-uncased
 
 Fine-tuned for multi-class classification
 
-🧹 Data Preprocessing
+### Data Preprocessing
 
 The following preprocessing steps were applied:
 
@@ -45,7 +46,7 @@ Attention mask generation
 
 Conversion to PyTorch tensors
 
-⚙️ Training Configuration
+### Training Configuration
 Setting	Value
 Optimiser	AdamW
 Loss Function	Cross-entropy
@@ -63,14 +64,14 @@ Macro Recall
 
 Macro F1-score
 
-🧪 Results
+###Results
 Model	Accuracy	F1-score (Macro)
 BERT	61.19%	60.97%
 TF-IDF + Logistic Regression	56.51%	56.26%
 
 ✔️ BERT outperformed the baseline, showing that contextual embeddings capture sentiment more effectively than traditional bag-of-words methods.
 
-⚠️ Limitations
+### Limitations
 
 Training limited due to computational constraints
 
@@ -78,7 +79,7 @@ Minimal hyperparameter tuning
 
 Only one transformer model evaluated
 
-🚀 Future Improvements
+### Future Improvements
 
 Evaluate other transformer models (RoBERTa, DistilBERT)
 
@@ -88,7 +89,7 @@ Perform extensive hyperparameter tuning
 
 Use larger training subsets
 
-🛠️ Tools & Libraries
+### Tools & Libraries
 
 Python
 
@@ -100,7 +101,7 @@ Hugging Face Datasets
 
 Scikit-learn
 
-📚 Notes
+### Notes
 
 This repository represents a student academic project demonstrating practical understanding of:
 
