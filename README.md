@@ -1,14 +1,14 @@
 # Individual-project-Large-language-model
 Large language model Assignment 
 Multi-Class Sentiment Analysis using BERT
-📌 Project Overview
+ Project Overview
 
 This project explores multi-class sentiment analysis on Yelp reviews using a fine-tuned BERT model.
 The task is to classify reviews into five sentiment categories (1–5 star ratings).
 
 A traditional TF-IDF + Logistic Regression model is used as a baseline to evaluate the benefits of transformer-based contextual representations.
 
-📊 Dataset
+### Dataset
 
 Yelp Review Full Dataset
 
